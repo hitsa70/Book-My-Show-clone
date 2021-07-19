@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+    font-family: Roboto,sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.flickity-page-dots {
+    bottom: 10px !important;
+}
+
+.flickity-prev-next-button{
+    border-radius: 5% !important;
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    
+    top: 40% !important;
+    width: 45px !important;
+    height: 45px !important;
+    padding: 10px !important;
+}
+
+.flickity-prev-next-button .arrow {
+    fill:white !important;
+}
+
+.flickity-page-dots .dot {
+    background:rgba(255,255,255,0.5) !important;
+}
+
+
+.flickity-page-dots .dot.is-selected {
+    background: white !important;
+}

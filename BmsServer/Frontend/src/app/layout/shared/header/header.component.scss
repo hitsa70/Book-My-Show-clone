@@ -1,0 +1,99 @@
+.vertical-center {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.bms-header {
+    background: rgb(51, 53, 69);
+    width: 100%;
+    color: white;
+    display: flex;
+    padding: 1.2% 0%;
+    font-size: 14px;
+
+    .bms-header-image {
+        padding-left: 8%;
+    }
+
+    .bms-search-bar {
+        padding-left: 20px;
+
+        .bms-search-bar-form {
+            display: flex;
+            position: relative;
+
+            svg {
+                width: 13px;
+                height: 13px;
+                margin: 10px 12px;
+                position: absolute;
+            }
+            #HeaderSeachBar {
+                line-height: 2.4em;
+                border-radius: 5px;
+                padding-left: 40px;
+            }
+        }
+    }
+
+    .bms-right {
+        margin-left: auto;
+        display: flex;
+        text-align: center;
+        padding-right: 8%;
+
+        .bms-signin {
+            color: rgb(255, 255, 255);
+            background-color: rgb(248, 68, 100);
+            font-size: 12px;
+            height: 25px;
+            line-height: 25px;
+            width: 67px;
+            text-align: center;
+            border-radius: 4px;
+            border: 1px solid rgb(248, 68, 100);
+            display: block;
+            margin: 0px 20px 0px 20px;
+        }
+    }
+}
+
+.header-menu {
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    background: rgb(31, 37, 51);
+    padding: 0px;
+    color: white;
+
+    .header-menu-left {
+        margin: 10px 0px;
+        display: flex;
+        text-align: center;
+        padding-left: 8%;
+        color: rgb(204, 204, 204);
+        .header-menu-left-elements {
+            padding-right: 15px;
+        }
+    }
+
+    .header-menu-right {
+        margin: 10px 0px;
+        margin-left: auto;
+        display: flex;
+        text-align: center;
+        padding-right: 8%;
+
+        .header-menu-right-elements {
+            padding-left: 15px;
+            
+        }
+    }
+
+    .new-logo {
+        font-size: 8px;
+        color: rgb(231, 54, 77);
+        font-weight: 500;
+    }
+}

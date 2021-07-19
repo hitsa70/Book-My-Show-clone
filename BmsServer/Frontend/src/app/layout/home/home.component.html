@@ -1,0 +1,79 @@
+<div>
+    <app-slider></app-slider>
+    
+    <div class="banner-image add-horizontal-margin">
+        <img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/lead-in-v3-collection-202102040828.png"
+            alt="book my show STREAM" width="100%" height="100%">
+    </div>
+    
+
+    <div class="entertainment-category add-horizontal-margin">
+        <div class="entertainment-category-heading">The Best of Entertainment</div>
+        <div class="entertainment-category-images">
+            <img class="category-image"
+                src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTYwKyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/workshops-collection-202007231330.png"
+                alt="" width="100%" height="100%">
+            <img class="category-image"
+                src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTUrIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/fitness-collection-2020081150.png">
+            <img class="category-image"
+                src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-NDUrIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/kids-collection-202007220710.png">
+            <img class="category-image"
+                src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-NzArIEV2ZW50cw%3D%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/comedy-shows-collection-202007220710.png">
+            <img class="category-image"
+                src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-NSBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/music-shows-collection-202007220710.png">
+        </div>
+    </div>
+
+    <div class="premiere-banner">
+        <div class="add-horizontal-margin">
+
+            <div class="banner-rupay-banner">
+                <a href="#" class="">
+                    <div class="">
+                        <img src="https://in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/premiere-rupay-banner-web-collection-202104230555.png"
+                            alt="" width="100%" height="100%">
+                    </div>
+                </a>
+            </div>
+
+            <div class="premiere-menu">
+                <div class="premiere-menu-text">
+                    <div class="premiere-heading">
+                        <div class="">Premieres</div>
+                    </div>
+
+                    <div class="premiere-see-all">
+                        <a href="" class="">
+                            <div class="see-all-text">See All ›</div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="premiere-bottom-text">
+                    <div class="">Brand new releases every Friday</div>
+                </div>
+
+                <div class="premier-cards">
+                    
+                    <div class="premier-card-image" *ngFor="let movie of movies" [routerLink]="['/movie', movie.movieId]">
+                             <img class="card-image-styles"
+                                   src={{movie.imageLink}}>
+                            <div class="premier-movie-name">{{movie.name}}</div>
+                             <div class="premier-movie-language">{{movie.movieLanguage}}</div>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <app-movie-card></app-movie-card>
+    <app-movie-card></app-movie-card>
+    <app-movie-card></app-movie-card>
+    <app-movie-card></app-movie-card>
+
+</div>
+<router-outlet></router-outlet>

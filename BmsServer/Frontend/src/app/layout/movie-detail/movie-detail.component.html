@@ -1,0 +1,148 @@
+<div class="card">
+    <div *ngIf="isMovieLoaded" class="card-header">
+        <h2>Movie Details</h2>
+    </div>
+    <div *ngIf="!isMovieLoaded" class="card-header">
+        <h2>Movie Details Not Found :( <br> wrong id used maybe :(</h2>
+    </div>
+    <div *ngIf="isMovieLoaded" class="card-body">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>{{ movie.name | titlecase }}</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        Language:
+                    </div>
+                    <div class="col-md-8">
+                        {{ movie.movieLanguage | titlecase }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        Length:
+                    </div>
+                    <div class="col-md-8">
+                        {{ movie.length | titlecase }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        Buy Price:
+                    </div>
+                    <div class="col-md-8">
+                        {{ movie.buyPrice }} &#x20B9;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        Rent Price:
+                    </div>
+                    <div class="col-md-8">
+                        {{ movie.rentPrice }} &#x20B9;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        Movie Quality:
+                    </div>
+                    <div class="col-md-8">
+                        {{ movie.movieQuality }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        Rating:
+                    </div>
+                    <div class="col-md-8">
+                        {{ movie.movieAgeRestriction }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        About:
+                    </div>
+                    <div class="col-md-8">
+                        {{ movie.about }}
+                    </div>
+                </div>
+                <div class="row mt-5 pt-5">
+                    <div class="col-md-4">
+                        <b>Cast :</b>
+                        <div class="d-flex flex-row">
+                            <div class="col margin-left-card">
+                                <img class="oval-image " width="120px" height="120px"
+                                    src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/alexander-skarsgard-1057902-24-03-2017-13-51-10.jpg">
+                                <div class="image-person-name">Alexander Skarsgård</div>
+                                <div class="image-person-role">as Nathan Lind</div>
+                            </div>
+                            <div class="col  margin-left-card">
+                                <img class="oval-image" width="120px" height="120px"
+                                    src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/millie-bobby-brown-1079885-24-05-2019-05-20-16.jpg">
+                                <div class="image-person-name">Millie Bobby Brown</div>
+                                <div class="image-person-role">as Madison Russell</div>
+                            </div>
+                            <div class="col  margin-left-card">
+                                <img class="oval-image" width="120px" height="120px"
+                                    src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/rebecca-hall-7076-11-09-2017-05-49-56.jpg">
+                                <div class="image-person-name">Rebecca Hall</div>
+                                <div class="image-person-role">as llene Andrews</div>
+                            </div>
+                            <div class="col  margin-left-card">
+                                <img class="oval-image" width="120px" height="120px"
+                                    src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/brian-tyree-henry-1096515-26-10-2018-14-45-47.jpg">
+                                <div class="image-person-name">Brian Tyree Henry</div>
+                                <div class="image-person-role">as Bernie Hayes</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-md-4">
+                        <b>Crew :</b>
+                        <div class="d-flex flex-row">
+                            <div class="col margin-left-card">
+                                <img class="oval-image " width="120px" height="120px"
+                                    src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/adam-wingard-36860-22-03-2021-15-05-24.jpg">
+                                <div class="image-person-name">Adam Wingard</div>
+                                <div class="image-person-role">as Director</div>
+                            </div>
+                            <div class="col  margin-left-card">
+                                <img class="oval-image" width="120px" height="120px"
+                                    src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/jon-jashni-iein013322-12-03-2018-17-45-45.jpg">
+                                <div class="image-person-name">Jon Jashni</div>
+                                <div class="image-person-role">as EXECUTIVE PRODUCER, PRODUCER</div>
+                            </div>
+                            <div class="col  margin-left-card">
+                                <img class="oval-image" width="120px" height="120px"
+                                    src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/eric-mcleod-iein013928-24-03-2017-15-31-22.jpg">
+                                <div class="image-person-name">Eric McLeod</div>
+                                <div class="image-person-role">as EXECUTIVE PRODUCER, PRODUCER</div>
+                            </div>
+                            <div class="col  margin-left-card">
+                                <img class="oval-image" width="120px" height="120px"
+                                    src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/thomas-tull-1065014-24-03-2017-17-40-16.jpg">
+                                <div class="image-person-name">Thomas Tull (Tull)</div>
+                                <div class="image-person-role">as EXECUTIVE PRODUCER, PRODUCER, WRITER</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <img src={{movie.imageLink}} alt="Movie Poster" [style.width.px]="250" />
+            </div>
+        </div>
+
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-outline-secondary" style="width:80px" (click)="btnClick();">
+            <i class="fa fa-chevron-left"></i>Back
+        </button>
+    </div>
+</div>
